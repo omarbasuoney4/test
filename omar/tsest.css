@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Almarai", sans-serif;
+    background-color: #f7f7f7;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+header{
+    color: #3b5998;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.navbar h1{
+    font-size: 35px;
+    font-family: "Playwrite CU", cursive;
+}
+
+.navbar .content{
+    display: flex;
+    margin-top: 17px;
+    
+}
+
+.navbar .content a{
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 20px;
+    color: #3b5998;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.navbar .logo{
+    display: flex;
+}
+
+.navbar .logo input{
+    padding-left: 15px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-right: 10PX;
+    background: transparent;
+    border: none;
+    border: 2px solid #3b5998;
+    border-radius: 10px;
+    
+}
+
+.navbar .logo input::placeholder{
+    color: #3b5998;
+    font-size: 15px;
+}
+
+
+.navbar .content a:hover{
+    color: #8b9dc3;
+}
+
+.home .video{
+    margin-top: 250px;
+}
+
+.home .video video{
+    width: 600px;
+    border: 2px solid #3b5998;
+    border-radius: 20px;
+    float: right;
+}
+
+.home{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+
+.home .text{
+    width: 700px;
+    padding-right: 60px;
+    margin-top: 290px;
+}
+
+.home .text p{
+    font-size: 20px;
+    padding-top: 20px;
+    color: #8b9dc3;
+}
+
+.home .text h1{
+    font-size: 35px;
+    color: #3b5998;
+    font-family: "Playwrite CU", cursive;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .navbar .content{
+        display: none;
+    }
+
+    .navbar .logo{
+        width: 80%;
+        margin: auto;
+    }
+
+    .home{
+        display: block;
+        width: 400px ;
+        
+    }
+
+    .home .text{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 80px;
+        padding-left: 40px;
+    }
+
+    .home .text{
+        margin-bottom: 90px;
+    }
+
+    .home .video video{
+        width: 350px;
+        margin-top: -150px;
+        margin-bottom: 40px;
+        margin-right: 16px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px){
+    .home .video video{
+        width: 400px;
+    }
+
+    .home .text h1{
+        font-size: 20px;
+    }
+
+    .home .text p{
+        font-size: 15px;
+    }
+
+    .home .text{
+        margin-top: 270px;
+    }
+
+    .home {
+        margin-top: -100px;
+    }
+}
+
+
